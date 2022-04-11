@@ -1,7 +1,7 @@
 {
   "name": "suprboard-tracer",
   "private": false,
-  "version": "0.24.0",
+  "version": "0.27.0",
   "description": "Example of Express integration with OpenTelemetry",
   "main": "index.js",
   "scripts": {
@@ -37,12 +37,8 @@
     "@opentelemetry/sdk-trace-base": "^0.25.0",
     "@opentelemetry/sdk-trace-node": "^0.25.0",
     "@opentelemetry/semantic-conventions": "^0.25.0",
-    "axios": "^0.21.1",
     "cross-env": "^7.0.3",
-    "dotenv": "^16.0.0",
-    "express": "^4.17.1",
-    "mongodb": "3.5.7"
+    "dotenv": "^16.0.0"
   },
-  "homepage": "https://github.com/open-telemetry/opentelemetry-js#readme",
-  "devDependencies": {}
+  "homepage": "https://github.com/open-telemetry/opentelemetry-js#readme"
 }
