@@ -1,4 +1,4 @@
 module.exports = {
-    tracer : require('./trace'),
+    tracer : require('./tracer'),
     axios: require('./client/axios')
 }

@@ -1,7 +1,7 @@
 {
   "name": "suprboard-tracer",
-  "private": true,
-  "version": "0.23.0",
+  "private": false,
+  "version": "0.24.0",
   "description": "Example of Express integration with OpenTelemetry",
   "main": "index.js",
   "scripts": {
@@ -43,5 +43,6 @@
     "express": "^4.17.1",
     "mongodb": "3.5.7"
   },
-  "homepage": "https://github.com/open-telemetry/opentelemetry-js#readme"
+  "homepage": "https://github.com/open-telemetry/opentelemetry-js#readme",
+  "devDependencies": {}
 }
