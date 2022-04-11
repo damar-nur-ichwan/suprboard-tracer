@@ -18,3 +18,8 @@ INSTANCE_NAME = instance8
 EXPORTER = zipkin
 EXPORTER_URL = http://localhost:9411
 ```
+
+## import tracer file to your main file
+```js
+require('suprboard-tracer')()
+```
