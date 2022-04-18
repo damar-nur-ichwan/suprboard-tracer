@@ -14,15 +14,14 @@ module.exports = function (){
   const opentelemetry = require('@opentelemetry/api');
 
   //set exporter
-  const Exporter = (process.env.EXPORTER || '').toLowerCase().startsWith('z') ? 
+  const exporter = (process.env.EXPORTER || '').toLowerCase().startsWith('z') ? 
   new ZipkinExporter({
     url: process.env.EXPORTER_URL+'/api/v2/spans',
     serviceName: process.env.INSTANCE_NAME,
-  }) : JaegerExporter;
-  const exporter = new Exporter({
-      url: process.env.EXPORTER_URL+'/api/traces',
-      serviceName: process.env.INSTANCE_NAME,
-  });
+  }) : new JaegerExporter({
+    url: process.env.EXPORTER_URL+'/api/traces',
+    serviceName: process.env.INSTANCE_NAME,
+});
 
   //set & regist provider
   const provider = new NodeTracerProvider({
